@@ -11,11 +11,8 @@
     --intro-grdnt-clr1: #FF512F;
     --intro-grdnt-clr2: #F09819;
 
-    --body-bcg-grdnt-clr1: #283048;
-    --body-bcg-grdnt-clr2: #859398;
-
-    --cntnr-bcg-grdnt-clr1: #232526;
-    --cntnr-bcg-grdnt-clr2: #414345;
+    --body-bcg-grdnt-clr1: #232526;
+    --body-bcg-grdnt-clr2: #414345;
 }
 
 *,
@@ -32,11 +29,10 @@ body {
     font-size: 1.6rem; /* 16px */
     font-family: var(--font-family-custom);
     min-height: 100vh;
-    background-image: linear-gradient(236deg, var(--cntnr-bcg-grdnt-clr1), var(--cntnr-bcg-grdnt-clr2));
+    background-image: linear-gradient(236deg, var(--body-bcg-grdnt-clr1), var(--body-bcg-grdnt-clr2));
 }
 
 .container {
-    background-image: linear-gradient(236deg, var(--cntnr-bcg-grdnt-clr1), var(--cntnr-bcg-grdnt-clr2));
     width: min(90%, 75em);
     min-height: 100vh;
     margin: auto;
@@ -53,7 +49,8 @@ body {
     width: 90%;
 }
 .intro,
-.side-text {
+.side-text,
+.rodape {
     background-image: linear-gradient(236deg, var(--intro-grdnt-clr1), var(--intro-grdnt-clr2));
     border-radius: 10px;
 
@@ -102,9 +99,15 @@ body {
 }
 
 .side-text {
-    font-weight: 800;
+    font-size: 2rem;
+
     width: 30ch;
+    margin: 0 auto;
     align-items: center;
+}
+
+.rodape {
+    border-radius: 0;
 }
 
 
