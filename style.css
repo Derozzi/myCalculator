@@ -24,11 +24,12 @@
 }
 html {
     font-size: 62.5%; /* 10px */
+    height: 100% ;
 }
 body {
     font-size: 1.6rem; /* 16px */
     font-family: var(--font-family-custom);
-    min-height: 100vh;
+    min-height: 100%;
     background-image: linear-gradient(236deg, var(--body-bcg-grdnt-clr1), var(--body-bcg-grdnt-clr2));
 }
 
@@ -75,6 +76,7 @@ body {
     width: 100%;
     padding: 0.625em;
     border-radius: 5px;
+    margin: auto;
 
     text-align: right;
     font-size: 3rem;
@@ -83,9 +85,9 @@ body {
 .calculator_keys {
     display: grid;
     justify-content: center;
-    padding: .625em;
-    gap: .1em;
-    grid-template-columns: repeat(4, 6.6875em);
+    /* padding: .625em; */
+    gap: .2em;
+    grid-template-columns: repeat(4, auto);
     grid-template-areas: 
     'clear plusMinus percentage divide'
     'seven eight nine timess'
@@ -99,6 +101,7 @@ body {
 }
 
 .side-texts-container {
+    /* background-color: blue; remove this after using  */
     gap: 1.5625em;
     margin: 0 auto;
 }
@@ -207,3 +210,27 @@ button {
 .box-shdw {
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.473);
 }
+
+
+/* Media Queries */
+/* 1199.98px */
+@media (max-width: 74.9375em) {
+    .content-container {
+        flex-direction: column;
+        gap: 6.25em;
+        align-items: center;
+        margin-bottom: 6.25em;
+    }
+}
+
+
+/* @media (max-width: 575.98px) { ... }
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) { ... }
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) { ... }
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) { ... } */
